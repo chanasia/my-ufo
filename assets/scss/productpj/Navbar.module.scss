@@ -1,0 +1,63 @@
+.Navbar{
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  padding: .3rem 0 1rem 0;
+  .container{
+      width: 100%;
+      max-width: 1188px;
+      margin: 0 auto;
+  }
+  ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 1rem;
+      li{
+          display: flex;
+          img.icon{
+              width: 30px;
+              height: 30px;
+              object-fit: cover;
+              border: none;
+          }
+          span.search_box{
+              display: flex;
+              border-radius: 5px;
+              overflow: hidden;
+              height: 45px;
+          }
+          button.btn_nav{ 
+              width: 45px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: none;
+              cursor: pointer;
+              overflow: hidden;
+              background-color: #ed1ef5;
+          }
+          button.btn_cart{
+              width: 45px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: none;
+              border-radius: 40%;
+              cursor: pointer;
+              overflow: hidden;
+              background-color: transparent;
+          }
+          input.search{
+              padding: 0 1rem;
+              border: none;
+              background-color: #efefef;
+              &:focus{
+                  outline: none;
+              }
+              width: 400px;
+              font-family: var(--ibm-font);
+          }
+      }
+  }
+}
