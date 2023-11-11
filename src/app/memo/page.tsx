@@ -5,9 +5,7 @@ type Props = {}
 const Memo:NextPage = ({}: Props) => {
   return (
     <div>
-      <a href="/projects">Projects</a>
-      <a href="/memo">Memo</a>
-      <a href="resume.chanasia.site">Resume</a>
+      Memo page
     </div>
   )
 }
