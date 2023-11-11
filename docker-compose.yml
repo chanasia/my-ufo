@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  website:
+    container_name: my-ufo
+    image: 'chanasia/myufo:latest'
+    ports:
+      - 3000:3001
+    # environment:
+    #   - HOSTNAME=yourdomain or localhost
+    restart: 'unless-stopped'
