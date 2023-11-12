@@ -1,10 +1,5 @@
 import './globals.scss'
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Home | Chanasia',
-  description: 'Personal website',
-}
+import Providers from './providers'
 
 export default function RootLayout({
   children,
@@ -14,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

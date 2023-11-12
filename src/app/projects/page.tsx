@@ -1,12 +1,17 @@
-"use client"
 import LaunchIcon from '@mui/icons-material/Launch';
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import './style.scss'
 import UndoIcon from '@mui/icons-material/Undo';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { motion } from 'framer'
+import { FadeInTransition, FadeTitle } from '../../components/FamerAnimation'
 import Link from 'next/link'
 import Head from 'next/head';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Projects | Chanasia',
+  description: 'Personal website',
+}
 
 type Props = {}
 
@@ -16,25 +21,16 @@ export default function Home({}: Props) {
       <Head>
         <title>Home | Chanasia</title>
       </Head>
-      <div className="absolute top-0 left-0 w-full flex justify-center items-center select-none bg-black">
+      <div className="absolute top-0 left-0 w-full flex justify-center items-center select-none">
         <div className="py-8 text-xl w-3/5 mx-auto border-b border-gray-400 flex justify-around text-center">
           <Link href="/"><UndoIcon className='text-3xl w-[24px] h-[24px]' /></Link>
-          <motion.div
-            initial={{opacity:0}}
-            animate={{opacity:1}}
-            transition={{ duration: 0.3 }}   
-          >
+          <FadeTitle>
             <h1 className='text-xl w-[150px]'>My Projects</h1>
-          </motion.div>
+          </FadeTitle>
           <button><DarkModeIcon className='text-3xl w-[24px] h-[24px]' /></button>
         </div>
       </div>
-      <motion.div
-        initial={{y:20, opacity:0}}
-        animate={{y:0, opacity:1}}
-        exit={{y:-20, opacity: 0 }}
-        transition={{ duration: 0.3 }}
-      >
+      <FadeInTransition>
       <div className='h-screen overflow-hidden'>
         <div className="mt-[120px] w-3/5 mx-auto grid grid-cols-3 gap-4">
           <div className='border border-dashed rounded-lg p-4 h-[109px]'>
@@ -63,7 +59,7 @@ export default function Home({}: Props) {
 
         </div>
       </div>
-      </motion.div>
+      </FadeInTransition>
     </div>
   )
 }
