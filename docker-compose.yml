@@ -6,6 +6,6 @@ services:
     image: 'chanasia/myufo:latest'
     ports:
       - 3001:3000
-    # environment:
-    #   - HOSTNAME=yourdomain or localhost
+    environment:
+     - HOSTNAME=chanasia.site
     restart: 'unless-stopped'
