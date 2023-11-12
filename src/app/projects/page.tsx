@@ -4,6 +4,7 @@ import './style.scss'
 import { FadeInTransition } from '../../components/FamerAnimation'
 import type { Metadata } from 'next'
 import { PageNavbar } from '@/components/Navbar';
+import { unstable_noStore as noStore } from 'next/cache'
 
 export const metadata: Metadata = {
   title: 'Projects | Chanasia',
@@ -13,6 +14,8 @@ export const metadata: Metadata = {
 type Props = {}
 
 export default function Home({}: Props) {
+  noStore()
+
   return (
     <div className='relative overflow-hidden h-full'>
       <PageNavbar>
@@ -26,7 +29,7 @@ export default function Home({}: Props) {
             <h2 className='text-center repo-name'>anime-recommendation</h2>
             <div className='mt-2 flex gap-4 justify-center'>
               <a href="https://github.com/chanasia/anime-recommendation" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank' title='Repository'><CodeIcon /></a>
-              <a href="http://rengme.chanasia.site/" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank' title='Website'><LaunchIcon /></a>
+              <a href={`http://rengme.${process.env.HOSTNAME}`} className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank' title='Website'><LaunchIcon /></a>
             </div>
           </div>
 

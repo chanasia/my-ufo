@@ -1,5 +1,5 @@
 import { unstable_noStore as noStore } from 'next/cache'
-import { FadeInTransition, FadeTitle } from '../components/FamerAnimation'
+import { FadeInTransition } from '../components/FamerAnimation'
 import Link from 'next/link';
 import type { Metadata } from 'next'
 import {HomeNavbar } from '@/components/Navbar';
