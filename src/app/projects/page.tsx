@@ -6,12 +6,16 @@ import UndoIcon from '@mui/icons-material/Undo';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { motion } from 'framer'
 import Link from 'next/link'
+import Head from 'next/head';
 
 type Props = {}
 
 export default function Home({}: Props) {
   return (
     <div className='relative overflow-hidden h-full'>
+      <Head>
+        <title>Home | Chanasia</title>
+      </Head>
       <div className="absolute top-0 left-0 w-full flex justify-center items-center select-none bg-black">
         <div className="py-8 text-xl w-3/5 mx-auto border-b border-gray-400 flex justify-around text-center">
           <Link href="/"><UndoIcon className='text-3xl w-[24px] h-[24px]' /></Link>
