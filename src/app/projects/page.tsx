@@ -25,24 +25,24 @@ export default function Home({}: Props) {
           <div className='border border-dashed border-black dark:border-white rounded-lg p-4 h-[109px]'>
             <h2 className='text-center repo-name'>anime-recommendation</h2>
             <div className='mt-2 flex gap-4 justify-center'>
-              <a href="https://github.com/chanasia/anime-recommendation" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank'><CodeIcon /></a>
-              <a href="http://rengme.chanasia.site/" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank'><LaunchIcon /></a>
+              <a href="https://github.com/chanasia/anime-recommendation" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank' title='Repository'><CodeIcon /></a>
+              <a href="http://rengme.chanasia.site/" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank' title='Website'><LaunchIcon /></a>
             </div>
           </div>
 
           <div className='border border-dashed border-black dark:border-white rounded-lg p-4 h-[109px]'>
             <h2 className='text-center repo-name'>Covid-Interface</h2>
             <div className='mt-2 flex gap-4 justify-center'>
-              <a href="https://github.com/chanasia/Covid-Interface" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank'><CodeIcon /></a>
-              <a href="https://chanasia.github.io/Covid-Interface/" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank'><LaunchIcon /></a>
+              <a href="https://github.com/chanasia/Covid-Interface" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank' title='Repository'><CodeIcon /></a>
+              <a href="https://chanasia.github.io/Covid-Interface/" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank' title='Website'><LaunchIcon /></a>
             </div>
           </div>
 
           <div className='border border-dashed border-black dark:border-white rounded-lg p-4 h-[109px]'>
             <h2 className='text-center repo-name'>wat-klai-ban</h2>
             <div className='mt-2 flex gap-4 justify-center'>
-              <a href="https://github.com/chanasia/wat-klai-ban" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank'><CodeIcon /></a>
-              <a href="https://chanasia.github.io/wat-klai-ban/" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank'><LaunchIcon /></a>
+              <a href="https://github.com/chanasia/wat-klai-ban" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank' title='Repository'><CodeIcon /></a>
+              <a href="https://chanasia.github.io/wat-klai-ban/" className='border p-2 border-black dark:border-white dark:hover:border-fuchsia-700 rounded-md hover:text-fuchsia-700 hover:border-fuchsia-700 transition-colors duration-200' target='_blank' title='Website'><LaunchIcon /></a>
             </div>
           </div>
 

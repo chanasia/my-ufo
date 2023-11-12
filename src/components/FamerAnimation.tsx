@@ -11,7 +11,6 @@ export const FadeInTransition = ({ children }: Props) => {
     <motion.div
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      exit={{ y: -20, opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
       {children}
@@ -22,8 +21,8 @@ export const FadeInTransition = ({ children }: Props) => {
 export const FadeTitle = ({ children }: Props) => {
   return (
     <motion.div
-      initial={{opacity:0}}
-      animate={{opacity:1}}
+      initial={{ y: 5,opacity:0}}
+      animate={{ y: 0,opacity:1}}
       transition={{ duration: 0.3 }} 
     >
       {children}
